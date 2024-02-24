@@ -1,0 +1,22 @@
+[package]
+name = "pasty-rs"
+version = "0.1.0"
+edition = "2021"
+authors = ["Ringo Hoffmann <contact@zekro.de>"]
+description = "A low level API wrapper for pasty."
+license = "MIT"
+documentation = "https://docs.rs/pasty-rs"
+readme = "README.md"
+repository = "https://github.com/zekrotja/pasty-rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.11.24", features = ["json"] }
+serde = { version = "1.0.197", features = ["derive"] }
+thiserror = "1.0.57"
+url = "2.5.0"
+
+[dev-dependencies]
+tokio = { version = "1.36.0", features = ["full"] }
+
